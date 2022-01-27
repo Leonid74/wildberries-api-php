@@ -1,0 +1,57 @@
+{
+  "name": "leonid74/wildberries-api-php",
+  "type": "library",
+  "description": "Wildberries REST API statistics client library with throttling requests",
+  "keywords": [
+    "Wildberries",
+    "WB",
+    "rest",
+    "api",
+    "sdk",
+    "client",
+    "stat",
+    "statistics"
+  ],
+  "homepage": "https://github.com/leonid74/wildberries-api-php",
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+        "name": "leonid74",
+        "homepage": "https://github.com/leonid74/",
+        "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.4",
+    "ext-curl": "*",
+    "ext-json": "*",
+    "josantonius/httpstatuscode": "^1.1"
+  },
+  "require-dev": {
+      "automattic/phpcs-neutron-standard": "^1.7",
+      "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
+      "phpunit/phpunit": "^9",
+      "squizlabs/php_codesniffer": "^3.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Leonid74\\Wildberries\\": "src/"
+    }
+  },
+  "scripts": {
+      "post-update-cmd": [
+          "@composer dump-autoload"
+      ],
+      "check-code": [
+          "phpcs -sp src/ tests/"
+      ],
+      "tests": [
+          "@php vendor/bin/phpunit tests"
+      ]
+  },
+  "config": {
+      "process-timeout": 0,
+      "sort-packages": true,
+      "optimize-autoloader": true
+  }
+}
