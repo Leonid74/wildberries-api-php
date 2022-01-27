@@ -1,9 +1,10 @@
 # (English) Wildberries REST API statistics client library with throttling requests
-## Русское описание ниже
+## Русское описание ниже, после английского
 
 A simple Wildberries REST API statistics client library with throttling requests (for example, no more than 10 requests per second according to API rules) and an example for PHP.
 
 Statistics API Documentation [Wildberries REST API statistics Documentation](https://images.wbstatic.net/portal/education/Kak_rabotat'_s_servisom_statistiki.pdf)
+
 New API Documentation [Wildberries REST API Documentation](https://suppliers-api.wildberries.ru/swagger/index.html)
 
 ### Installing
@@ -41,7 +42,7 @@ try {
     // $WbApiClient->debugLevel = WbApiClient::DEBUG_NONE;
     // only URL level debug
     // $WbApiClient->debugLevel = WbApiClient::DEBUG_URL;
-    // only HEADERS level debug
+    // only URL and HEADERS level debug
     // $WbApiClient->debugLevel = WbApiClient::DEBUG_HEADERS;
     // max level of debug messages to STDOUT
     // $WbApiClient->debugLevel = WbApiClient::DEBUG_CONTENT;
@@ -73,7 +74,8 @@ if ( isset( $reportDetailByPeriod->is_error ) ) {
     var_dump( $reportDetailByPeriod );
 }
 
-// You can set a common date (dateFrom) via the setDateFrom() function and then access other functions without passing the date
+// You can set a common date (dateFrom) via the setDateFrom() function and then access other functions
+// without passing the date
 $WbApiClient->setDateFrom( $dateFrom );
 $sales = $WbApiClient->sales();
 $incomes = $WbApiClient->incomes();
@@ -84,7 +86,8 @@ $incomes = $WbApiClient->incomes();
 
 Простая клиентская REST API библиотека статистики Wildberries с регулированием запросов (например, не более 10 запросов в секунду в соответствии с правилами API) и примером для PHP.
 
-Описание API [Wildberries REST API statistics](https://images.wbstatic.net/portal/education/Kak_rabotat'_s_servisom_statistiki.pdf)
+Описание API статистики [Wildberries REST API statistics](https://images.wbstatic.net/portal/education/Kak_rabotat'_s_servisom_statistiki.pdf)
+
 Описание нового API [Wildberries REST API](https://suppliers-api.wildberries.ru/swagger/index.html)
 
 ### Установка
@@ -154,7 +157,8 @@ if ( isset( $reportDetailByPeriod->is_error ) ) {
     var_dump( $reportDetailByPeriod );
 }
 
-// Можно задать общую дату (dateFrom) через функцию setDateFrom() и затем обращаться к другим функциям, не передавая дату
+// Можно задать общую дату (dateFrom) через функцию setDateFrom() и затем обращаться к другим функциям,
+// не передавая дату
 $WbApiClient->setDateFrom( $dateFrom );
 $sales = $WbApiClient->sales();
 $incomes = $WbApiClient->incomes();
