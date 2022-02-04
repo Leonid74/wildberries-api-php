@@ -1,7 +1,7 @@
 # (English) Wildberries REST API statistics client library with throttling requests
 ## Русское описание ниже, после английского
 
-A simple Wildberries REST API statistics client library with throttling requests (for example, no more than 10 requests per second according to API rules) and an example for PHP.
+A simple Wildberries REST API statistics client library with throttling requests (for example, no more than 10 requests per second according to API rules) and an example for PHP. Automatic request resending is supported when the http response code "429: too many requests" is received.
 
 Statistics API Documentation [Wildberries REST API statistics Documentation](https://images.wbstatic.net/portal/education/Kak_rabotat'_s_servisom_statistiki.pdf)
 
@@ -84,7 +84,7 @@ $incomes = $WbApiClient->incomes();
 
 # (Russian) Клиентская REST API библиотека статистики Wildberries с регулированием запросов
 
-Простая клиентская REST API библиотека статистики Wildberries с регулированием запросов (например, не более 10 запросов в секунду в соответствии с правилами API) и примером для PHP.
+Простая клиентская REST API библиотека статистики Wildberries с регулированием запросов (например, не более 10 запросов в секунду в соответствии с правилами API) и примером для PHP. Поддерживается автоматическая повторная отправка запроса при получении http кода ответа "429: too many requests".
 
 Описание API статистики [Wildberries REST API statistics](https://images.wbstatic.net/portal/education/Kak_rabotat'_s_servisom_statistiki.pdf)
 

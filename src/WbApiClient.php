@@ -311,9 +311,16 @@ class WbApiClient implements WbApiInterface
             usleep( $usleep );
         } while ( false );
 
-        $this->lastRequestTime = microtime( true );
+        do {
+            $this->lastRequestTime = microtime( true );
+            $response = curl_exec( $this->curl );
 
-        $response = curl_exec( $this->curl );
+            $oneMoreTry = curl_getinfo( $this->curl, CURLINFO_RESPONSE_CODE ) == 429;
+            if ( $oneMoreTry ) {
+                $this->debug( "[{$this->requestCounter}] +++++ TOO MANY REQUESTS, WAITING 0.5sec +++++", self::DEBUG_URL );
+                usleep( 500000 );
+            }
+        } while ( $oneMoreTry );
 
         return $response;
     }
