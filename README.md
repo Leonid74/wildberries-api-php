@@ -2,6 +2,9 @@
 [![License](https://img.shields.io/badge/license-BSD-blue.svg?maxAge=43200)](./LICENSE)
 [![Latest Stable Version](https://img.shields.io/github/v/release/Leonid74/wildberries-api-php)](https://github.com/Leonid74/wildberries-api-php/releases/latest)
 [![CodeFactor](https://www.codefactor.io/repository/github/leonid74/wildberries-api-php/badge)](https://www.codefactor.io/repository/github/leonid74/wildberries-api-php)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/218b45bd6c75462c82b444a265b434bf)](https://www.codacy.com/gh/Leonid74/wildberries-api-php/dashboard)
+[![Code Inspector](https://api.codiga.io/project/30883/score/svg)](https://app.codiga.io/public/project/30883/wildberries-api-php/dashboard)
+[![codecov](https://codecov.io/gh/Leonid74/wildberries-api-php/branch/master/graph/badge.svg?token=0WUKUCVBV0)](https://codecov.io/gh/Leonid74/wildberries-api-php)
 
 # (English) Wildberries REST API statistics client library with throttling requests
 ## Русское описание ниже (после английского)
@@ -87,6 +90,12 @@ $incomes = $WbApiClient->incomes();
 
 ```
 
+## Author
+Leonid74 (https://github.com/Leonid74)
+
+## License
+This software is distributed under the [BSD 3-Clause license](./LICENSE) terms.
+
 ## (Russian) Клиентская REST API библиотека статистики Wildberries с регулированием запросов
 
 Простая клиентская REST API библиотека статистики Wildberries с регулированием запросов (например, не более 10 запросов в секунду в соответствии с правилами API) и примером для PHP. Поддерживается автоматическая повторная отправка запроса при получении http кода ответа "429: too many requests".
@@ -169,3 +178,9 @@ $sales = $WbApiClient->sales();
 $incomes = $WbApiClient->incomes();
 
 ```
+
+## Автор
+Leonid74 (https://github.com/Leonid74)
+
+## Лицензия
+Данное ПО распространяется по лицензии [BSD 3-Clause license](./LICENSE)
