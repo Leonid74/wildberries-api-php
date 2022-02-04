@@ -1,13 +1,13 @@
 [![Author](https://img.shields.io/badge/author-Leonid74-blue.svg)](https://github.com/Leonid74)
 [![License](https://img.shields.io/badge/license-BSD-blue.svg?maxAge=43200)](./LICENSE)
 [![Latest Stable Version](https://img.shields.io/github/v/release/Leonid74/wildberries-api-php)](https://github.com/Leonid74/wildberries-api-php/releases/latest)
-[![GitHub all releases]](https://img.shields.io/github/downloads/Leonid74/wildberries-api-php/total?color=blue)
+![GitHub all releases](https://img.shields.io/github/downloads/Leonid74/wildberries-api-php/total?color=blue)
 [![CodeFactor](https://www.codefactor.io/repository/github/leonid74/wildberries-api-php/badge)](https://www.codefactor.io/repository/github/leonid74/wildberries-api-php)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/218b45bd6c75462c82b444a265b434bf)](https://www.codacy.com/gh/Leonid74/wildberries-api-php/dashboard)
 [![Code Inspector](https://api.codiga.io/project/30883/score/svg)](https://app.codiga.io/public/project/30883/wildberries-api-php/dashboard)
 
-# (English) Wildberries REST API statistics client library with throttling requests
-## Русское описание ниже (после английского)
+# Wildberries REST API statistics client library with throttling requests
+## [(russian) Русское описание ниже](#%D0%9A%D0%BB%D0%B8%D0%B5%D0%BD%D1%82%D1%81%D0%BA%D0%B0%D1%8F+REST+API+%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B0+%D1%81%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B8+Wildberries+%D1%81+%D1%80%D0%B5%D0%B3%D1%83%D0%BB%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%D0%BC+%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D0%BE%D0%B2)
 
 A simple Wildberries REST API statistics client library with throttling requests (for example, no more than 10 requests per second according to API rules) and an example for PHP. Automatic request resending is supported when the http response code "429: too many requests" is received.
 
@@ -96,7 +96,8 @@ Leonid74 (https://github.com/Leonid74)
 ## License
 This software is distributed under the [BSD 3-Clause license](./LICENSE) terms.
 
-## (Russian) Клиентская REST API библиотека статистики Wildberries с регулированием запросов
+<a id="%D0%9A%D0%BB%D0%B8%D0%B5%D0%BD%D1%82%D1%81%D0%BA%D0%B0%D1%8F+REST+API+%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B0+%D1%81%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B8+Wildberries+%D1%81+%D1%80%D0%B5%D0%B3%D1%83%D0%BB%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%D0%BC+%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D0%BE%D0%B2"></a>
+## Клиентская REST API библиотека статистики Wildberries с регулированием запросов
 
 Простая клиентская REST API библиотека статистики Wildberries с регулированием запросов (например, не более 10 запросов в секунду в соответствии с правилами API) и примером для PHP. Поддерживается автоматическая повторная отправка запроса при получении http кода ответа "429: too many requests".
 
