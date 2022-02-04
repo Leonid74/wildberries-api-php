@@ -4,7 +4,7 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/leonid74/wildberries-api-php/badge)](https://www.codefactor.io/repository/github/leonid74/wildberries-api-php)
 
 # (English) Wildberries REST API statistics client library with throttling requests
-## Русское описание ниже, после английского
+## Русское описание ниже (после английского)
 
 A simple Wildberries REST API statistics client library with throttling requests (for example, no more than 10 requests per second according to API rules) and an example for PHP. Automatic request resending is supported when the http response code "429: too many requests" is received.
 
