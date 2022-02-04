@@ -189,7 +189,6 @@ class WbApiClient implements WbApiInterface
         if ( empty( $this->token ) ) {
             return $this->handleError( 'The Token is not specified' );
         }
-
         if ( !isset( $data['dateFrom'] ) ) {
             return $this->handleError( 'The dateFrom parameter is not specified' );
         }
@@ -245,7 +244,7 @@ class WbApiClient implements WbApiInterface
 
         $curlErrors = curl_error( $this->curl );
         $curlInfo = curl_getinfo( $this->curl );
-        $ip = $curlInfo['primary_ip'];
+        $ipAddress = $curlInfo['primary_ip'];
         $header_size = $curlInfo['header_size'];
         $headerCode = $curlInfo['http_code'];
         $responseHeaders = trim( substr( $response, 0, $header_size ) );
@@ -272,7 +271,7 @@ class WbApiClient implements WbApiInterface
         $retval->data = $responseBody;
         $retval->http_code = $headerCode;
         $retval->headers = $responseHeaders;
-        $retval->ip = $ip;
+        $retval->ip = $ipAddress;
         $retval->curlErrors = $curlErrors;
         $retval->method = $method . ':' . $url;
         $retval->timestamp = date( DATE_RFC3339 );
