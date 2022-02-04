@@ -1,11 +1,10 @@
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/6528aae2c01a4bb68c3a113250d9da93)](https://app.codacy.com/gh/Leonid74/wildberries-api-php?utm_source=github.com&utm_medium=referral&utm_content=Leonid74/wildberries-api-php&utm_campaign=Badge_Grade_Settings)
 [![Author](https://img.shields.io/badge/author-Leonid74-blue.svg)](https://github.com/Leonid74)
 [![License](https://img.shields.io/badge/license-BSD-blue.svg?maxAge=43200)](./LICENSE)
 [![Latest Stable Version](https://img.shields.io/github/v/release/Leonid74/wildberries-api-php)](https://github.com/Leonid74/wildberries-api-php/releases/latest)
+[![GitHub all releases]](https://img.shields.io/github/downloads/Leonid74/wildberries-api-php/total?color=blue)
 [![CodeFactor](https://www.codefactor.io/repository/github/leonid74/wildberries-api-php/badge)](https://www.codefactor.io/repository/github/leonid74/wildberries-api-php)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/218b45bd6c75462c82b444a265b434bf)](https://www.codacy.com/gh/Leonid74/wildberries-api-php/dashboard)
 [![Code Inspector](https://api.codiga.io/project/30883/score/svg)](https://app.codiga.io/public/project/30883/wildberries-api-php/dashboard)
-[![codecov](https://codecov.io/gh/Leonid74/wildberries-api-php/branch/master/graph/badge.svg?token=0WUKUCVBV0)](https://codecov.io/gh/Leonid74/wildberries-api-php)
 
 # (English) Wildberries REST API statistics client library with throttling requests
 ## Русское описание ниже (после английского)
