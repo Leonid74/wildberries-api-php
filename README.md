@@ -1,3 +1,4 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/6528aae2c01a4bb68c3a113250d9da93)](https://app.codacy.com/gh/Leonid74/wildberries-api-php?utm_source=github.com&utm_medium=referral&utm_content=Leonid74/wildberries-api-php&utm_campaign=Badge_Grade_Settings)
 [![Author](https://img.shields.io/badge/author-Leonid74-blue.svg)](https://github.com/Leonid74)
 [![License](https://img.shields.io/badge/license-BSD-blue.svg?maxAge=43200)](./LICENSE)
 [![Latest Stable Version](https://img.shields.io/github/v/release/Leonid74/wildberries-api-php)](https://github.com/Leonid74/wildberries-api-php/releases/latest)
